@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">TrophyCanteen</string>
+
+    <string name="logo">ТРОФЕЙ</string>
+    <string name="canteen">Столовая</string>
+
+    <string name="FIO">ФИО</string>
+    <string name="shift">Смена</string>
+
+    <string name="FIOhint">ФИО (полностью)</string>
+    <string name="shifthint">Введите смену</string>
+
+    <string name="enterbutton">Перейти к заказу</string>
+
+
+
+    <string name="order">Заказ</string>
+
+    <string name="position">Позиция</string>
+    <string name="serving">Порции</string>
+
+    <string name="firstdish">Первое:</string>
+    <string name="seconddish">Горячее:</string>
+    <string name="garnish">Гарнир:</string>
+    <string name="salad">Салат:</string>
+    <string name="beverages">Напиток:</string>
+    <string name="baking">Выпечка:</string>
+
+    <string name="orderbutton">Заказать</string>
+
+    <string name="line">\n_______________</string>
+    <string name="n">\n___</string>
+</resources>

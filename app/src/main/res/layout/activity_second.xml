@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/canteen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:text="@string/canteen"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:text="@string/order"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/fiologo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="10sp"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:text="@string/FIO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold|italic" />
+    <EditText
+        android:id="@+id/fio"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_below="@+id/fiologo"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="0sp"
+        android:autofillHints=""
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="@string/FIOhint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintcolor"
+        android:textSize="16sp" />
+
+
+
+    <TextView
+        android:id="@+id/shiftlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/fiologo"
+        android:layout_marginStart="170sp"
+        android:layout_toEndOf="@id/fiologo"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:text="@string/shift"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/shift"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignBottom="@id/fio"
+        android:layout_marginStart="32sp"
+        android:layout_toEndOf="@id/fio"
+        android:autofillHints=""
+        android:background="@null"
+        android:ems="1"
+        android:hint="@string/n"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="100sp"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:text="@string/position"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/serving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/position"
+        android:layout_marginStart="205sp"
+        android:layout_toEndOf="@id/position"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:text="@string/serving"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+
+    <TextView
+        android:id="@+id/firstdish"
+        android:layout_width="85sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/position"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:text="@string/firstdish"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/selectfd"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignBottom="@id/firstdish"
+        android:layout_marginEnd="30sp"
+        android:layout_toEndOf="@id/firstdish"
+        android:text="@string/line"
+        android:textAlignment="viewStart"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/servingfd"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignEnd="@id/serving"
+        android:layout_alignBottom="@id/selectfd"
+        android:autofillHints=""
+        android:background="@null"
+        android:ems="1"
+        android:hint="@string/n"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/seconddish"
+        android:layout_width="85sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstdish"
+        android:layout_alignStart="@id/firstdish"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:text="@string/seconddish"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/selectsd"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignBottom="@id/seconddish"
+        android:layout_marginEnd="30sp"
+        android:layout_toEndOf="@id/seconddish"
+        android:text="@string/line"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/servingsd"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignEnd="@id/serving"
+        android:layout_alignBottom="@id/selectsd"
+        android:autofillHints=""
+        android:background="@null"
+        android:ems="1"
+        android:hint="@string/n"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/garnish"
+        android:layout_width="85sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seconddish"
+        android:layout_alignStart="@id/firstdish"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:text="@string/garnish"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/selectgar"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignBottom="@id/garnish"
+        android:layout_marginEnd="30sp"
+        android:layout_toEndOf="@id/garnish"
+        android:text="@string/line"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/servinggar"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignEnd="@id/serving"
+        android:layout_alignBottom="@id/selectgar"
+        android:autofillHints=""
+        android:background="@null"
+        android:ems="1"
+        android:hint="@string/n"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/salad"
+        android:layout_width="85sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/garnish"
+        android:layout_alignStart="@id/firstdish"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:text="@string/salad"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/selectsal"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignBottom="@id/salad"
+        android:layout_marginEnd="30sp"
+        android:layout_toEndOf="@id/salad"
+        android:text="@string/line"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/servingsal"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignEnd="@id/serving"
+        android:layout_alignBottom="@id/selectsal"
+        android:autofillHints=""
+        android:background="@null"
+        android:ems="1"
+        android:hint="@string/n"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/beverages"
+        android:layout_width="85sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/salad"
+        android:layout_alignStart="@id/firstdish"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:text="@string/beverages"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/selectbev"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignBottom="@id/beverages"
+        android:layout_marginEnd="30sp"
+        android:layout_toEndOf="@id/beverages"
+        android:text="@string/line"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/servingbev"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignEnd="@id/serving"
+        android:layout_alignBottom="@id/selectbev"
+        android:autofillHints=""
+        android:background="@null"
+        android:ems="1"
+        android:hint="@string/n"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/baking"
+        android:layout_width="85sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/beverages"
+        android:layout_alignStart="@id/firstdish"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:text="@string/baking"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/selectbak"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignBottom="@id/baking"
+        android:layout_marginEnd="30sp"
+        android:layout_toEndOf="@id/baking"
+        android:text="@string/line"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/servingbak"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignEnd="@id/serving"
+        android:layout_alignBottom="@id/selectbak"
+        android:autofillHints=""
+        android:background="@null"
+        android:ems="1"
+        android:hint="@string/n"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <Button
+        android:id="@+id/btnorder"
+        android:layout_width="235dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/baking"
+        android:layout_marginHorizontal="100sp"
+        android:layout_marginTop="40sp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:text="@string/orderbutton"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
